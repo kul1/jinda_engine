@@ -275,3 +275,170 @@ Completed 500 Internal Server Error in 27ms (MongoDB: 0.0ms | Allocations: 16166
 ActionView::Template::Error - undefined method `version' for nil:NilClass:
 
 Started POST "/jinda/__better_errors/db8c5f31c565cadc/variables" for ::1 at 2020-07-26 15:07:27 -0500
+Started GET "/" for ::1 at 2020-07-26 17:03:40 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/kul/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/kul/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 40.6ms | Allocations: 416)
+Completed 200 OK in 54ms (Views: 48.8ms | MongoDB: 0.0ms | Allocations: 2141)
+
+
+Started GET "/jinda" for ::1 at 2020-07-26 17:03:53 -0500
+Processing by JindaEngine::JindaController#index as HTML
+  Rendering /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml
+  Rendered /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml (Duration: 63.3ms | Allocations: 27048)
+Completed 500 Internal Server Error in 68ms (MongoDB: 0.0ms | Allocations: 28723)
+
+
+
+ActionView::Template::Error - couldn't find file 'jinda_e_template_manifest.js'
+Checked in these paths: 
+  /Users/kul/mygem/jinda_engine/test/dummy/app/assets/config
+  /Users/kul/mygem/jinda_engine/test/dummy/app/assets/images
+  /Users/kul/mygem/jinda_engine/test/dummy/app/assets/stylesheets
+  /Users/kul/mygem/jinda_engine/app/assets/config
+  /Users/kul/mygem/jinda_engine/app/assets/images
+  /Users/kul/mygem/jinda_engine/app/assets/javascripts
+  /Users/kul/mygem/jinda_engine/app/assets/stylesheets
+  /Users/kul/.rvm/gems/ruby-2.6.3/gems/jquery-rails-4.3.5/vendor/assets/javascripts
+  /Users/kul/.rvm/gems/ruby-2.6.3/gems/cloudinary-1.13.2/vendor/assets/html
+  /Users/kul/.rvm/gems/ruby-2.6.3/gems/cloudinary-1.13.2/vendor/assets/javascripts
+  /Users/kul/.rvm/gems/ruby-2.6.3/gems/jquery-turbolinks-2.1.0/vendor/assets/javascripts
+  /Users/kul/.rvm/gems/ruby-2.6.3/gems/font-awesome-rails-4.7.0.5/app/assets/fonts
+  /Users/kul/.rvm/gems/ruby-2.6.3/gems/font-awesome-rails-4.7.0.5/app/assets/stylesheets
+  /Users/kul/.rvm/gems/ruby-2.6.3/gems/normalize-rails-4.1.1/vendor/assets/stylesheets
+  /Users/kul/.rvm/gems/ruby-2.6.3/gems/actioncable-6.0.3.2/app/assets/javascripts
+  /Users/kul/.rvm/gems/ruby-2.6.3/gems/actionview-6.0.3.2/lib/assets/compiled
+  /Users/kul/.rvm/gems/ruby-2.6.3/gems/font-awesome-sass-5.12.0/assets/stylesheets
+  /Users/kul/.rvm/gems/ruby-2.6.3/gems/font-awesome-sass-5.12.0/assets/fonts:
+
+Started POST "/jinda/__better_errors/8de62d2a71d593b2/variables" for ::1 at 2020-07-26 17:03:54 -0500
+Started GET "/jinda" for ::1 at 2020-07-26 17:06:56 -0500
+Processing by JindaEngine::JindaController#index as HTML
+  Rendering /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml
+  Rendered /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml (Duration: 185.1ms | Allocations: 64308)
+Completed 500 Internal Server Error in 190ms (MongoDB: 0.0ms | Allocations: 65512)
+
+
+
+ActionView::Template::Error - Asset `logo_jinda.png` was not declared to be precompiled in production.
+Declare links to your assets in `app/assets/config/manifest.js`.
+
+  //= link logo_jinda.png
+and restart your server:
+
+Started POST "/jinda/__better_errors/8da0e258f93113c2/variables" for ::1 at 2020-07-26 17:06:56 -0500
+Started GET "/jinda" for ::1 at 2020-07-26 17:08:24 -0500
+Processing by JindaEngine::JindaController#index as HTML
+  Rendering /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml
+  Rendered /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml (Duration: 113.9ms | Allocations: 46028)
+Completed 500 Internal Server Error in 123ms (MongoDB: 0.0ms | Allocations: 48420)
+
+
+
+ActionView::Template::Error - undefined method `version' for nil:NilClass:
+
+Started POST "/jinda/__better_errors/ea11fb9060d13476/variables" for ::1 at 2020-07-26 17:08:25 -0500
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /Users/kul/mygem/jinda_engine/test/dummy/config/environment.rb:5)
+Started GET "/jinda" for ::1 at 2020-07-26 17:17:13 -0500
+Processing by JindaEngine::JindaController#index as HTML
+  Rendering /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml
+  Rendered /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml (Duration: 10.2ms | Allocations: 2981)
+Completed 500 Internal Server Error in 24ms (MongoDB: 0.0ms | Allocations: 3224)
+
+
+
+ActionView::Template::Error - undefined method `version' for nil:NilClass:
+
+Started POST "/jinda/__better_errors/429d89a4516be840/variables" for ::1 at 2020-07-26 17:17:14 -0500
+Started GET "/jinda" for ::1 at 2020-07-26 17:17:15 -0500
+Processing by JindaEngine::JindaController#index as HTML
+  Rendering /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml
+  Rendered /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml (Duration: 9.1ms | Allocations: 2978)
+Completed 500 Internal Server Error in 10ms (MongoDB: 0.0ms | Allocations: 3218)
+
+
+
+ActionView::Template::Error - undefined method `version' for nil:NilClass:
+
+Started POST "/jinda/__better_errors/90a0cf7f84af83ab/variables" for ::1 at 2020-07-26 17:17:15 -0500
+Started GET "/jinda" for ::1 at 2020-07-26 17:17:16 -0500
+Processing by JindaEngine::JindaController#index as HTML
+  Rendering /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml
+  Rendered /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml (Duration: 9.0ms | Allocations: 2977)
+Completed 500 Internal Server Error in 10ms (MongoDB: 0.0ms | Allocations: 3217)
+
+
+
+ActionView::Template::Error - undefined method `version' for nil:NilClass:
+
+Started POST "/jinda/__better_errors/fe4e55249929d7e5/variables" for ::1 at 2020-07-26 17:17:16 -0500
+Started GET "/jinda" for ::1 at 2020-07-26 17:17:17 -0500
+Processing by JindaEngine::JindaController#index as HTML
+  Rendering /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml
+  Rendered /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml (Duration: 7.5ms | Allocations: 2977)
+Completed 500 Internal Server Error in 9ms (MongoDB: 0.0ms | Allocations: 3217)
+
+
+
+ActionView::Template::Error - undefined method `version' for nil:NilClass:
+
+Started POST "/jinda/__better_errors/f5d07415931ed20f/variables" for ::1 at 2020-07-26 17:17:17 -0500
+Started GET "/jinda" for ::1 at 2020-07-26 17:17:49 -0500
+Processing by JindaEngine::JindaController#index as HTML
+  Rendering /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml
+  Rendered /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml (Duration: 154.5ms | Allocations: 41400)
+Completed 500 Internal Server Error in 172ms (MongoDB: 0.0ms | Allocations: 43790)
+
+
+
+ActionView::Template::Error - undefined method `version' for nil:NilClass:
+
+Started POST "/jinda/__better_errors/94860adde3da77ab/variables" for ::1 at 2020-07-26 17:17:50 -0500
+Started GET "/" for ::1 at 2020-07-26 17:58:16 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/kul/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/kul/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 41.9ms | Allocations: 416)
+Completed 200 OK in 53ms (Views: 49.2ms | MongoDB: 0.0ms | Allocations: 2141)
+
+
+Started GET "/jinda" for ::1 at 2020-07-26 17:58:22 -0500
+Processing by JindaEngine::JindaController#index as HTML
+  Rendering /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml
+  Rendered /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml (Duration: 104.0ms | Allocations: 41429)
+Completed 500 Internal Server Error in 108ms (MongoDB: 0.0ms | Allocations: 42672)
+
+
+
+ActionView::Template::Error - undefined method `version' for nil:NilClass:
+
+Started POST "/jinda/__better_errors/c6a6d0dcde860dde/variables" for ::1 at 2020-07-26 17:58:23 -0500
+Started GET "/" for ::1 at 2020-07-26 18:20:41 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/kul/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/kul/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 15.6ms | Allocations: 416)
+Completed 200 OK in 32ms (Views: 25.5ms | MongoDB: 0.0ms | Allocations: 2142)
+
+
+Started GET "/jinda" for ::1 at 2020-07-26 18:20:49 -0500
+Processing by JindaEngine::JindaController#index as HTML
+  Rendering /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml
+  Rendered /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml (Duration: 177.9ms | Allocations: 48982)
+Completed 500 Internal Server Error in 184ms (MongoDB: 0.0ms | Allocations: 50584)
+
+
+
+ActionView::Template::Error - undefined method `version' for nil:NilClass:
+
+Started POST "/jinda/__better_errors/e8a32de35f6f6fbd/variables" for ::1 at 2020-07-26 18:20:50 -0500
