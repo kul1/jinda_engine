@@ -1,11 +1,11 @@
-require 'jinda'
-require 'jinda/helpers'
-include Jinda::Helpers
+require 'jinda_engine'
+require 'jinda_engine/helpers'
+include Jinda_engine::Helpers
 
 @btext= "# jinda begin"
 @etext= "# jinda end"
 
-namespace :jinda do
+namespace :Jinda_engine do
   desc "generate models from mm"
   task :update=> :environment do
     @app= get_app
@@ -26,7 +26,7 @@ namespace :jinda do
 
   desc "cancel all pending tasks"
   task :cancel=> :environment do
-    Jinda::Xmain.update_all "status='X'", "status='I' or status='R'"
+    Jinda_engine::Xmain.update_all "status='X'", "status='I' or status='R'"
   end
 end
 

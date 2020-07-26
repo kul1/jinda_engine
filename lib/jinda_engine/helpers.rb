@@ -25,7 +25,7 @@ require 'active_support/core_ext'
 ########################################################################]
 
 
-module Jinda
+module Jinda_engine
   module Helpers
     require "rexml/document"
     include REXML
@@ -38,7 +38,7 @@ module Jinda
       c = name2camel(service.module.code)
       custom_controller= "#{c}Controller"
       params["return"] = request.env['HTTP_REFERER']
-      Jinda::Xmain.create :service=>service,
+      Jinda_engine::Xmain.create :service=>service,
         :start=>Time.now,
         :name=>service.name,
         :ip=> get_ip,
@@ -55,11 +55,11 @@ module Jinda
         }
     end
     def clear_xmains
-      Jinda::Xmain.where(:status =>{'$in'=>['R','I']}).update_all(:status=>'X')
+      Jinda_engine::Xmain.where(:status =>{'$in'=>['R','I']}).update_all(:status=>'X')
       redirect_to action:"pending"
     end
     def ajax_notice
-      if notice=Jinda::Notice.recent(current_ma_user, request.env["REMOTE_ADDR"])
+      if notice=Jinda_engine::Notice.recent(current_ma_user, request.env["REMOTE_ADDR"])
         notice.update_attribute :unread, false
         js = "notice('#{notice.message}');"
       else
@@ -73,7 +73,7 @@ module Jinda
     ########################################################################]
     #
     ##############################  @runseq ################################]
-    #  @runseq => #<Jinda::Runseq _id: 5df31912a54d758417a7afc9, 
+    #  @runseq => #<Jinda_engine::Runseq _id: 5df31912a54d758417a7afc9, 
     #   created_at: 2019-12-13 04:52:34 UTC, 
     #   updated_at: 2019-12-13 04:52:43 UTC, 
     #   user_id: nil, 
@@ -127,7 +127,7 @@ module Jinda
         end
         role= get_option_xml("role", activity) || default_role
         rule= get_option_xml("rule", activity) || "true"
-        runseq= Jinda::Runseq.create :xmain=>xmain.id,
+        runseq= Jinda_engine::Runseq.create :xmain=>xmain.id,
           :name=> name, :action=> action,
           :code=> code, :role=>role.upcase, :rule=> rule,
           :rstep=> i, :form_step=> j, :status=>'I',
@@ -139,7 +139,7 @@ module Jinda
     end
 
     def init_vars(xmain)
-      @xmain= Jinda::Xmain.find xmain
+      @xmain= Jinda_engine::Xmain.find xmain
       @xvars= @xmain.xvars
       @runseq= @xmain.runseqs.find @xmain.current_runseq
       #    authorize?
@@ -157,7 +157,7 @@ module Jinda
       $user_id= current_ma_user.try(:id)
     end
     def init_vars_by_runseq(runseq_id)
-      @runseq= Jinda::Runseq.find runseq_id
+      @runseq= Jinda_engine::Runseq.find runseq_id
       @xmain= @runseq.xmain
       @xvars= @xmain.xvars
       #@xvars[:current_step]= @runseq.rstep
@@ -222,7 +222,7 @@ module Jinda
       request.env['HTTP_X_FORWARDED_FOR'] || request.env['REMOTE_ADDR']
     end
     def get_default_role
-      default_role= Jinda::Role.where(:code =>'default').first
+      default_role= Jinda_engine::Role.where(:code =>'default').first
       return default_role ? default_role.name.to_s : ''
     end
 
@@ -305,13 +305,13 @@ module Jinda
 
     end
     def ma_log(message)
-      #  Jinda::Notice.create :message => ERB::Util.html_escape(message.gsub("`","'")),
+      #  Jinda_engine::Notice.create :message => ERB::Util.html_escape(message.gsub("`","'")),
       #    :unread=> true, :ip=> ($ip || request.env["REMOTE_ADDR"])
       if session[:user_id]
-        Jinda::Notice.create :message => ERB::Util.html_escape(message.gsub("`","'")),
+        Jinda_engine::Notice.create :message => ERB::Util.html_escape(message.gsub("`","'")),
           :user_id => $user.id, :unread=> true, :ip=>request.env["REMOTE_ADDR"]
       else
-        Jinda::Notice.create :message => ERB::Util.html_escape(message.gsub("`","'")),
+        Jinda_engine::Notice.create :message => ERB::Util.html_escape(message.gsub("`","'")),
           :unread=> true, :ip=>request.env["REMOTE_ADDR"]
       end
     end
@@ -344,7 +344,7 @@ module Jinda
       end
     end
     def role_name(code)
-      role= Jinda::Role.where(code:code).first
+      role= Jinda_engine::Role.where(code:code).first
       return role ? role.name : ""
     end
     def uncomment(s)
@@ -387,8 +387,8 @@ module Jinda
       %w(form output mail pdf).include? s
     end
     # def handle_ma_notice
-    #   if Jinda::Notice.recent.count>0
-    #     notice= Jinda::Notice.recent.last
+    #   if Jinda_engine::Notice.recent.count>0
+    #     notice= Jinda_engine::Notice.recent.last
     #     notice.update_attribute :unread, false
     #     "<script>notice('#{notice.message}');</script>"
     #   else
@@ -429,7 +429,7 @@ module Jinda
         # First Node eg: Module Name 
         # ##########################################################################
         # create or update to GmaModule
-        ma_module= Jinda::Module.find_or_create_by :code=>module_code
+        ma_module= Jinda_engine::Module.find_or_create_by :code=>module_code
         ma_module.update_attributes :uid=>ma_module.id.to_s, :icon=>menu_icon
         protected_modules << ma_module.uid
         name = module_code if name.blank?
@@ -452,7 +452,7 @@ module Jinda
           if scode.downcase=="link"
             role= get_option_xml("role", s) || ""
             rule= get_option_xml("rule", s) || ""
-            ma_service= Jinda::Service.find_or_create_by :module_code=> ma_module.code, :code=> scode, :name=> sname
+            ma_service= Jinda_engine::Service.find_or_create_by :module_code=> ma_module.code, :code=> scode, :name=> sname
             ma_service.update_attributes :xml=>s.to_s, :name=>sname,
               :list=>listed(s), :ma_secured=>ma_secured?(s),
               :module_id=>ma_module.id, :seq => seq,
@@ -469,7 +469,7 @@ module Jinda
             step1 = s.elements['node']
             role= get_option_xml("role", step1) || ""
             rule= get_option_xml("rule", step1) || ""
-            ma_service= Jinda::Service.find_or_create_by :module_code=> ma_module.code, :code=> scode
+            ma_service= Jinda_engine::Service.find_or_create_by :module_code=> ma_module.code, :code=> scode
             ma_service.update_attributes :xml=>s.to_s, :name=>sname,
               :list=>listed(s), :ma_secured=>ma_secured?(s),
               :module_id=>ma_module.id, :seq => seq,
@@ -480,8 +480,8 @@ module Jinda
           end
         end
       end
-      Jinda::Module.not_in(:uid=>protected_modules).delete_all
-      Jinda::Service.not_in(:uid=>protected_services).delete_all
+      Jinda_engine::Module.not_in(:uid=>protected_modules).delete_all
+      Jinda_engine::Service.not_in(:uid=>protected_services).delete_all
     end
 
     # ##########################################################################
@@ -527,7 +527,7 @@ module Jinda
       # create array of files to be tested
       $afile = Array.new
 
-      Jinda::Module.all.each do |m|
+      Jinda_engine::Module.all.each do |m|
         m.services.each do |s|
           dir ="app/views/#{s.module.code}"
           unless gen_view_file_exist?(dir)
@@ -579,7 +579,7 @@ module Jinda
 
     def process_controllers
       process_services
-      modules= Jinda::Module.all
+      modules= Jinda_engine::Module.all
       modules.each do |m|
         next if controller_exists?(m.code)
         system("rails generate controller #{m.code}")

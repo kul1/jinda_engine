@@ -1,56 +1,277 @@
-DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+Started GET "/" for ::1 at 2020-07-26 11:34:21 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/kul/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/kul/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 10.0ms | Allocations: 416)
+Completed 200 OK in 19ms (Views: 15.2ms | Allocations: 2131)
 
-Being able to do this is deprecated. Autoloading during initialization is going
-to be an error condition in future versions of Rails.
 
-Reloading does not reboot the application, and therefore code executed during
-initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
-the expected changes won't be reflected in that stale Module object.
+Started GET "/" for ::1 at 2020-07-26 12:15:47 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/kul/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/kul/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 40.2ms | Allocations: 416)
+Completed 200 OK in 50ms (Views: 46.5ms | MongoDB: 0.0ms | Allocations: 2141)
 
-These autoloaded constants have been unloaded.
 
-Please, check the "Autoloading and Reloading Constants" guide for solutions.
- (called from <top (required)> at /Users/kul/mygem/jinda/test/dummy/config/environment.rb:5)
-Started GET "/jinda" for ::1 at 2020-07-24 19:35:47 -0500
+Started GET "/" for ::1 at 2020-07-26 12:15:50 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/kul/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/kul/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.5ms | Allocations: 196)
+Completed 200 OK in 11ms (Views: 9.4ms | MongoDB: 0.0ms | Allocations: 713)
 
-ActiveRecord::ConnectionNotEstablished - No connection pool with 'primary' found.:
 
-Started POST "/__better_errors/e9664fadd7637e9b/variables" for ::1 at 2020-07-24 19:35:47 -0500
-Started GET "/jinda/articles" for ::1 at 2020-07-24 19:36:57 -0500
+Started GET "/jinda" for ::1 at 2020-07-26 12:15:56 -0500
+Processing by JindaEngine::JindaController#index as HTML
+  Rendering /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml
+  Rendered /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml (Duration: 18.2ms | Allocations: 14259)
+Completed 500 Internal Server Error in 22ms (MongoDB: 0.0ms | Allocations: 15489)
 
-ActiveRecord::ConnectionNotEstablished - No connection pool with 'primary' found.:
 
-Started POST "/__better_errors/cc1a0e396095b2a0/variables" for ::1 at 2020-07-24 19:36:57 -0500
-Started GET "/" for ::1 at 2020-07-24 19:37:19 -0500
 
-ActiveRecord::ConnectionNotEstablished - No connection pool with 'primary' found.:
+ActionView::Template::Error - The asset "logo_jinda.png" is not present in the asset pipeline.:
 
-Started POST "/__better_errors/eb5e7051ba8171b5/variables" for ::1 at 2020-07-24 19:37:19 -0500
-DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
-
-Being able to do this is deprecated. Autoloading during initialization is going
-to be an error condition in future versions of Rails.
-
-Reloading does not reboot the application, and therefore code executed during
-initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
-the expected changes won't be reflected in that stale Module object.
-
-These autoloaded constants have been unloaded.
-
-Please, check the "Autoloading and Reloading Constants" guide for solutions.
- (called from <top (required)> at /Users/kul/mygem/jinda/test/dummy/config/environment.rb:5)
-DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
-
-Being able to do this is deprecated. Autoloading during initialization is going
-to be an error condition in future versions of Rails.
-
-Reloading does not reboot the application, and therefore code executed during
-initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
-the expected changes won't be reflected in that stale Module object.
-
-These autoloaded constants have been unloaded.
-
-Please, check the "Autoloading and Reloading Constants" guide for solutions.
- (called from <top (required)> at /Users/kul/mygem/jinda/test/dummy/config/environment.rb:5)
+Started POST "/jinda/__better_errors/a4a788ec3b4a38ae/variables" for ::1 at 2020-07-26 12:15:56 -0500
 DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
  (called from load at /Users/kul/.rvm/gems/ruby-2.6.3/bin/rake:23)
+Started GET "/" for ::1 at 2020-07-26 12:26:43 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/kul/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/kul/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 38.3ms | Allocations: 416)
+Completed 200 OK in 46ms (Views: 43.0ms | MongoDB: 0.0ms | Allocations: 2141)
+
+
+Started GET "/jinda" for ::1 at 2020-07-26 12:26:51 -0500
+Processing by JindaEngine::JindaController#index as HTML
+  Rendering /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml
+  Rendered /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml (Duration: 25.2ms | Allocations: 14262)
+Completed 500 Internal Server Error in 29ms (MongoDB: 0.0ms | Allocations: 15505)
+
+
+
+ActionView::Template::Error - The asset "logo_jinda.png" is not present in the asset pipeline.:
+
+Started POST "/jinda/__better_errors/395bdede01b513ab/variables" for ::1 at 2020-07-26 12:26:51 -0500
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from load at /Users/kul/.rvm/gems/ruby-2.6.3/bin/rake:23)
+Started GET "/jinda" for ::1 at 2020-07-26 12:32:37 -0500
+Processing by JindaEngine::JindaController#index as HTML
+  Rendering /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml
+  Rendered /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml (Duration: 83.9ms | Allocations: 14632)
+Completed 500 Internal Server Error in 98ms (MongoDB: 0.0ms | Allocations: 17022)
+
+
+
+ActionView::Template::Error - The asset "logo_jinda.png" is not present in the asset pipeline.:
+
+Started POST "/jinda/__better_errors/6909b6f4c1e5d437/variables" for ::1 at 2020-07-26 12:32:37 -0500
+Started GET "/jinda" for ::1 at 2020-07-26 12:32:40 -0500
+Processing by JindaEngine::JindaController#index as HTML
+  Rendering /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml
+  Rendered /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml (Duration: 6.4ms | Allocations: 2855)
+Completed 500 Internal Server Error in 8ms (MongoDB: 0.0ms | Allocations: 3096)
+
+
+
+ActionView::Template::Error - The asset "logo_jinda.png" is not present in the asset pipeline.:
+
+Started POST "/jinda/__better_errors/143d138814c345b9/variables" for ::1 at 2020-07-26 12:32:41 -0500
+Started GET "/" for ::1 at 2020-07-26 12:32:45 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/kul/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/kul/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 10.8ms | Allocations: 202)
+Completed 200 OK in 14ms (Views: 12.1ms | MongoDB: 0.0ms | Allocations: 768)
+
+
+Started GET "/jinda_engine" for ::1 at 2020-07-26 12:32:48 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/jinda_engine"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+turbolinks_render (0.9.20) lib/turbolinks_render/middleware.rb:81:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+rack (2.2.3) lib/rack/handler/webrick.rb:95:in `service'
+/Users/kul/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/Users/kul/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/Users/kul/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/jinda" for ::1 at 2020-07-26 12:33:04 -0500
+Processing by JindaEngine::JindaController#index as HTML
+  Rendering /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml
+  Rendered /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml (Duration: 17.5ms | Allocations: 12092)
+Completed 500 Internal Server Error in 22ms (MongoDB: 0.0ms | Allocations: 13299)
+
+
+
+ActionView::Template::Error - The asset "logo_jinda.png" is not present in the asset pipeline.:
+
+Started POST "/jinda/__better_errors/126f827c1de65592/variables" for ::1 at 2020-07-26 12:33:04 -0500
+Started GET "/jinda" for ::1 at 2020-07-26 12:37:25 -0500
+Processing by JindaEngine::JindaController#index as HTML
+  Rendering /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml
+  Rendered /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml (Duration: 19.2ms | Allocations: 14645)
+Completed 500 Internal Server Error in 29ms (MongoDB: 0.0ms | Allocations: 17037)
+
+
+
+ActionView::Template::Error - The asset "logo_jinda.png" is not present in the asset pipeline.:
+
+Started POST "/jinda/__better_errors/aa414170f1dadff5/variables" for ::1 at 2020-07-26 12:37:25 -0500
+Started GET "/jinda" for ::1 at 2020-07-26 12:37:26 -0500
+Processing by JindaEngine::JindaController#index as HTML
+  Rendering /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml
+  Rendered /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml (Duration: 3.8ms | Allocations: 2875)
+Completed 500 Internal Server Error in 5ms (MongoDB: 0.0ms | Allocations: 3116)
+
+
+
+ActionView::Template::Error - The asset "logo_jinda.png" is not present in the asset pipeline.:
+
+Started POST "/jinda/__better_errors/23ba0c00e8e34fbd/variables" for ::1 at 2020-07-26 12:37:26 -0500
+Started GET "/" for ::1 at 2020-07-26 12:37:29 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/kul/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/kul/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 17.1ms | Allocations: 201)
+Completed 200 OK in 21ms (Views: 18.9ms | MongoDB: 0.0ms | Allocations: 767)
+
+
+Started GET "/jinda_engine" for ::1 at 2020-07-26 12:37:32 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/jinda_engine"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+turbolinks_render (0.9.20) lib/turbolinks_render/middleware.rb:81:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+rack (2.2.3) lib/rack/handler/webrick.rb:95:in `service'
+/Users/kul/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/Users/kul/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/Users/kul/.rvm/rubies/ruby-2.6.3/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+Started GET "/jinda" for ::1 at 2020-07-26 12:37:53 -0500
+Processing by JindaEngine::JindaController#index as HTML
+  Rendering /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml
+  Rendered /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml (Duration: 15.0ms | Allocations: 12107)
+Completed 500 Internal Server Error in 21ms (MongoDB: 0.0ms | Allocations: 13306)
+
+
+
+ActionView::Template::Error - The asset "logo_jinda.png" is not present in the asset pipeline.:
+
+Started POST "/jinda/__better_errors/0501e70766c7d5f0/variables" for ::1 at 2020-07-26 12:37:53 -0500
+Started GET "/jinda" for ::1 at 2020-07-26 12:38:11 -0500
+Processing by JindaEngine::JindaController#index as HTML
+  Rendering /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml
+  Rendered /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml (Duration: 3.2ms | Allocations: 2880)
+Completed 500 Internal Server Error in 4ms (MongoDB: 0.0ms | Allocations: 3121)
+
+
+
+ActionView::Template::Error - The asset "logo_jinda.png" is not present in the asset pipeline.:
+
+Started POST "/jinda/__better_errors/40110e49573d99c9/variables" for ::1 at 2020-07-26 12:38:11 -0500
+Started GET "/" for ::1 at 2020-07-26 13:16:58 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/kul/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/kul/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 48.1ms | Allocations: 416)
+Completed 200 OK in 65ms (Views: 58.8ms | MongoDB: 0.0ms | Allocations: 2141)
+
+
+Started GET "/jinda" for ::1 at 2020-07-26 13:17:08 -0500
+Processing by JindaEngine::JindaController#index as HTML
+  Rendering /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml
+  Rendered /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml (Duration: 23.6ms | Allocations: 14434)
+Completed 500 Internal Server Error in 27ms (MongoDB: 0.0ms | Allocations: 15677)
+
+
+
+ActionView::Template::Error - The asset "logo_jinda.png" is not present in the asset pipeline.:
+
+Started POST "/jinda/__better_errors/fdccc5da521d7dc0/variables" for ::1 at 2020-07-26 13:17:09 -0500
+Started GET "/jinda" for ::1 at 2020-07-26 13:20:29 -0500
+Processing by JindaEngine::JindaController#index as HTML
+  Rendering /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml
+  Rendered /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml (Duration: 98.9ms | Allocations: 14652)
+Completed 500 Internal Server Error in 112ms (MongoDB: 0.0ms | Allocations: 17042)
+
+
+
+ActionView::Template::Error - The asset "logo_jinda.png" is not present in the asset pipeline.:
+
+Started POST "/jinda/__better_errors/8efdfcc2310ce230/variables" for ::1 at 2020-07-26 13:20:30 -0500
+Started GET "/" for ::1 at 2020-07-26 13:34:09 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/kul/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/kul/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 78.6ms | Allocations: 416)
+Completed 200 OK in 95ms (Views: 87.8ms | MongoDB: 0.0ms | Allocations: 2141)
+
+
+Started GET "/jinda" for ::1 at 2020-07-26 13:34:14 -0500
+Processing by JindaEngine::JindaController#index as HTML
+  Rendering /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml
+  Rendered /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml (Duration: 26.2ms | Allocations: 14434)
+Completed 500 Internal Server Error in 29ms (MongoDB: 0.0ms | Allocations: 15677)
+
+
+
+ActionView::Template::Error - The asset "logo_jinda.png" is not present in the asset pipeline.:
+
+Started POST "/jinda/__better_errors/bd0224f45d8d88bf/variables" for ::1 at 2020-07-26 13:34:15 -0500
+Started GET "/" for ::1 at 2020-07-26 14:30:39 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/kul/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/kul/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 57.4ms | Allocations: 416)
+Completed 200 OK in 70ms (Views: 64.0ms | MongoDB: 0.0ms | Allocations: 2141)
+
+
+Started GET "/jinda" for ::1 at 2020-07-26 14:30:48 -0500
+Processing by JindaEngine::JindaController#index as HTML
+  Rendering /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml
+  Rendered /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml (Duration: 21.6ms | Allocations: 13563)
+Completed 500 Internal Server Error in 26ms (MongoDB: 0.0ms | Allocations: 14806)
+
+
+
+ActionView::Template::Error - undefined method `version' for nil:NilClass:
+
+Started POST "/jinda/__better_errors/69c90ba5ce0098f8/variables" for ::1 at 2020-07-26 14:30:49 -0500
+Started GET "/jinda" for ::1 at 2020-07-26 15:07:26 -0500
+Processing by JindaEngine::JindaController#index as HTML
+  Rendering /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml
+  Rendered /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml (Duration: 15.6ms | Allocations: 13774)
+Completed 500 Internal Server Error in 27ms (MongoDB: 0.0ms | Allocations: 16166)
+
+
+
+ActionView::Template::Error - undefined method `version' for nil:NilClass:
+
+Started POST "/jinda/__better_errors/db8c5f31c565cadc/variables" for ::1 at 2020-07-26 15:07:27 -0500

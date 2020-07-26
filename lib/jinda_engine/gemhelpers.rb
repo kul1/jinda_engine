@@ -1,8 +1,8 @@
 # This GemHelpers is to make helper able to be test in gem (not in rails)
 module Jinda_engine	
   module GemHelpers
-	  require 'jinda_engine/helpers'
-		include jinda_engine::Helpers
+	  require 'Jinda_engine/helpers'
+		include Jinda_engine::Helpers
 		require 'pry'
 			# Find gem root 
 			spec = Gem::Specification.find_by_name("jinda_engine")
