@@ -1,0 +1,56 @@
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /Users/kul/mygem/jinda/test/dummy/config/environment.rb:5)
+Started GET "/jinda" for ::1 at 2020-07-24 19:35:47 -0500
+
+ActiveRecord::ConnectionNotEstablished - No connection pool with 'primary' found.:
+
+Started POST "/__better_errors/e9664fadd7637e9b/variables" for ::1 at 2020-07-24 19:35:47 -0500
+Started GET "/jinda/articles" for ::1 at 2020-07-24 19:36:57 -0500
+
+ActiveRecord::ConnectionNotEstablished - No connection pool with 'primary' found.:
+
+Started POST "/__better_errors/cc1a0e396095b2a0/variables" for ::1 at 2020-07-24 19:36:57 -0500
+Started GET "/" for ::1 at 2020-07-24 19:37:19 -0500
+
+ActiveRecord::ConnectionNotEstablished - No connection pool with 'primary' found.:
+
+Started POST "/__better_errors/eb5e7051ba8171b5/variables" for ::1 at 2020-07-24 19:37:19 -0500
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /Users/kul/mygem/jinda/test/dummy/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /Users/kul/mygem/jinda/test/dummy/config/environment.rb:5)
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from load at /Users/kul/.rvm/gems/ruby-2.6.3/bin/rake:23)
