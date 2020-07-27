@@ -442,39 +442,3 @@ Completed 500 Internal Server Error in 184ms (MongoDB: 0.0ms | Allocations: 5058
 ActionView::Template::Error - undefined method `version' for nil:NilClass:
 
 Started POST "/jinda/__better_errors/e8a32de35f6f6fbd/variables" for ::1 at 2020-07-26 18:20:50 -0500
-Started GET "/" for ::1 at 2020-07-26 18:46:40 -0500
-Processing by Rails::WelcomeController#index as HTML
-  Rendering /Users/kul/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
-  Rendered /Users/kul/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 12.0ms | Allocations: 1666)
-Completed 200 OK in 29ms (Views: 21.6ms | MongoDB: 0.0ms | Allocations: 7010)
-
-
-Started GET "/jinda" for ::1 at 2020-07-26 18:46:49 -0500
-Processing by JindaEngine::JindaController#index as HTML
-  Rendering /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml
-  Rendered /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml (Duration: 174.1ms | Allocations: 56283)
-Completed 500 Internal Server Error in 180ms (MongoDB: 0.0ms | Allocations: 57958)
-
-
-
-ActionView::Template::Error - undefined method `version' for nil:NilClass:
-
-Started POST "/jinda/__better_errors/c405c9d4cb85d131/variables" for ::1 at 2020-07-26 18:46:49 -0500
-Started GET "/" for ::1 at 2020-07-26 20:25:02 -0500
-Processing by Rails::WelcomeController#index as HTML
-  Rendering /Users/kul/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
-  Rendered /Users/kul/.rvm/gems/ruby-2.6.3/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 51.4ms | Allocations: 1602)
-Completed 200 OK in 68ms (Views: 63.0ms | MongoDB: 0.0ms | Allocations: 5376)
-
-
-Started GET "/jinda" for ::1 at 2020-07-26 20:25:12 -0500
-Processing by JindaEngine::JindaController#index as HTML
-  Rendering /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml
-  Rendered /Users/kul/mygem/jinda_engine/app/views/jinda_engine/jinda/index.html.haml (Duration: 230.2ms | Allocations: 62035)
-Completed 500 Internal Server Error in 240ms (MongoDB: 0.0ms | Allocations: 65135)
-
-
-
-ActionView::Template::Error - undefined method `version' for nil:NilClass:
-
-Started POST "/jinda/__better_errors/1a171cd9dede2532/variables" for ::1 at 2020-07-26 20:25:12 -0500
